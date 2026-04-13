@@ -17,6 +17,10 @@ export class HomeComponent implements OnInit {
         'assets/img/培訓1.jpg',
         'assets/img/培訓2.jpg'
       ],
+      imageDescriptions: [
+        '線上影片與內部教材學習',
+        '線上影片與內部教材學習',
+      ],
       description: '這兩個月主要透過觀看線上影片與內部教材，鞏固前端開發的基礎知識，熟悉 Angular 框架與公司內部開發規範，為之後的專案打下基礎。',
       achievements: [
         '完成 Angular 核心概念學習',
@@ -29,8 +33,11 @@ export class HomeComponent implements OnInit {
       title: 'AI智管家',
       imageUrls: [
         'assets/img/智管家1.jpg',
-        'assets/img/智管家2.jpg',
-        'assets/img/智管家3.jpg'
+        'assets/img/告警設定.gif'
+      ],
+      imageDescriptions: [
+        'AI智管家首頁介面',
+        '入侵偵測事件-告警設定'
       ],
       description: '正式進入專案開發，負責「AI智管家」的前端實作。',
       achievements: [
@@ -45,10 +52,16 @@ export class HomeComponent implements OnInit {
       period: '2026/02 - 至今',
       title: '裝配助理',
       imageUrls: [
-        'assets/img/裝配助理.jpg',
-        'assets/img/裝配助理2.jpg',
-        'assets/img/裝配助理3.jpg',
-        'assets/img/裝配助理4.jpg'
+        'assets/img/主從製程資訊頁面.gif',
+        'assets/img/綁定彈窗.gif',
+        'assets/img/通知功能.gif',
+        'assets/img/操作紀錄彈窗.gif'
+      ],
+      imageDescriptions: [
+        '主從製程資訊頁面展示與操作',
+        '製程派工綁定流程彈窗',
+        '通知訊息功能',
+        '頁面操作紀錄檢視'
       ],
       description: '參與裝配助理專案，針對製造裝配線的需求，打造即時的輔助系統。',
       achievements: [

@@ -173,7 +173,8 @@
                   <!-- Carousel Track -->
                   <div class="carousel-track" [style.transform]="'translateX(' + (-currentImageIndex * 100) + '%)'">
                     <div class="carousel-slide" *ngFor="let imgUrl of timelines[activeTimelineIndex].imageUrls">
-                      <img [src]="imgUrl" alt="專案截圖" class="project-img" (click)="openImageModal(imgUrl)" style="cursor: zoom-in;" />
+                      <img [src]="imgUrl" alt="專案截圖" class="project-img" (click)="openImageModal(imgUrl)"
+                        style="cursor: zoom-in;" />
                     </div>
                   </div>
 
@@ -193,10 +194,19 @@
                       class="indicator-dot" [class.active]="idx === currentImageIndex" (click)="setCurrentImage(idx)">
                     </span>
                   </div>
+
                 </div>
               </div>
               <div class="project-details">
-                <p class="desc-text">{{ timelines[activeTimelineIndex].description }}</p>
+                <p class="desc-text">
+                  {{ timelines[activeTimelineIndex].description }}
+                  <br><br>
+                  <span
+                    *ngIf="timelines[activeTimelineIndex].imageDescriptions && timelines[activeTimelineIndex].imageDescriptions.length > 0"
+                    class="image-desc-highlight">
+                    {{ timelines[activeTimelineIndex].imageDescriptions[currentImageIndex] }}
+                  </span>
+                </p>
 
                 <div class="achievements" *ngIf="timelines[activeTimelineIndex].achievements.length > 0">
                   <h4>💡 核心成果：</h4>
